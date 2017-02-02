@@ -1,7 +1,11 @@
 #include <bitset>
 
-// the range [R, L) == [R, L - 1]
-// return the result at compile time
+/**
+ * @author paul.varghese
+ * @params bits std::bitset 
+ * @params R,L the range [R, L) == [R, L - 1]
+ * @return the result at compile time
+ */
 template<std::size_t R, std::size_t L, std::size_t N>
 constexpr void set_range(std::bitset<N>& bits)
 {
