@@ -14,7 +14,7 @@ constexpr void set_range(std::bitset<N>& bits)
     std::bitset<N> mask;
     mask.set();
     mask <<= numOnes; 
-    mask.flip();
+    ~mask;
     mask <<= R ;
     bits |= mask;
 }
